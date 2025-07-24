@@ -21,6 +21,12 @@ pipeline {
       }
     }
 
+    stage('Notify') {
+      steps {
+        echo 'Notificando'
+      }
+    }
+
   }
   environment {
     AUTHOR = 'Jesus'
